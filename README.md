@@ -85,14 +85,18 @@ text_simplification/
 └── ...
 ```
 
-## Overall Performance
+## Model Performance Comparison
 
-| Metric | Score |
-|--------|-------|
-| BLEU | 0.3510 |
-| ROUGE-L | 0.5904 |
-| BERTScore | 0.8237 |
-
+| Model | BLEU | ROUGE-L | BERTScore |
+|-------|------|---------|-----------|
+| GRU-attention | 0.3256 | 0.5602 | 0.7871 |
+| Transformer-base | 0.2693 | 0.4907 | 0.7381 |
+| GPT2-base FT | 0.3083 | 0.5461 | 0.8021 |
+| GPT2-large FT | 0.2693 | 0.5111 | 0.7882 |
+| T5-v1.1 | 0.3022 | 0.5281 | 0.8166 |
+| NAR-LevT | 0.2052 | 0.4402 | 0.7254 |
+| DiffuSeq (Original) | 0.3622 | 0.5849 | 0.8126 |
+| **T5-base (Ours)** | **0.3510** | **0.5904** | **0.8237** |
 
 ## Configuration
 
