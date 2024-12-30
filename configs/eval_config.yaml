@@ -1,0 +1,27 @@
+model:
+  checkpoint_path: "./t5_simplification"
+  gpu_device: "7"
+
+data:
+  test_cache: "./cached_datasets/test"
+
+generation:
+  max_length: 128
+  num_beams: 4
+  length_penalty: 2.0
+  early_stopping: true
+  batch_size: 8
+
+evaluation:
+  metrics:
+    bleu: true
+    rouge: true
+    bert_score: true
+  bert_score:
+    model: "microsoft/deberta-xlarge-mnli"
+    batch_size: 32
+  
+logging:
+  level: "INFO"
+  save_predictions: true
+  results_dir: "./evaluation_results"

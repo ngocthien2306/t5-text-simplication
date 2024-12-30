@@ -1,0 +1,19 @@
+# Deep Learning & Model
+torch>=1.13.0
+transformers>=4.15.0
+datasets>=2.0.0
+
+# Metrics & Evaluation
+torchmetrics>=0.7.0
+bert-score>=0.3.11
+nltk>=3.6.0
+rouge>=1.0.1
+
+# Data Processing
+numpy>=1.21.0
+PyYAML>=5.4.1
+
+# Utilities
+tqdm>=4.62.0
+logging>=0.5.1.2
+
