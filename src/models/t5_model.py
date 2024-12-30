@@ -57,9 +57,11 @@ class T5Model:
         """Initialize or load the model.
         
         Returns:
-            T5ForConditionalGeneration instance
+            T5ForConditionalGeneration instance 
         """
         model_path = self.model_config.get("checkpoint_path", self.model_config["name"])
+        logger.info(f"Loading model: {model_path}")
+        
         return T5ForConditionalGeneration.from_pretrained(model_path)
         
     def _get_device(self) -> torch.device:

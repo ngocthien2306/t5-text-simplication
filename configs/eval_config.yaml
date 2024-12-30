@@ -1,9 +1,17 @@
 model:
-  checkpoint_path: "./t5_simplification"
+  checkpoint_path: "/root/nguyen/research/NLP/Final/code/t5_simplification/checkpoint-26470"
   gpu_device: "7"
+  name: "t5-small"
 
 data:
   test_cache: "./cached_datasets/test"
+  cache_dir: "./cached_datasets"
+  root_dir: "../datasets/"
+  train_file: "train.jsonl"
+  val_file: "valid.jsonl" 
+  test_file: "test.jsonl"
+  cache_dir: "./cached_datasets"
+  
 
 generation:
   max_length: 128

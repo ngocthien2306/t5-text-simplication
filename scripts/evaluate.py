@@ -2,6 +2,10 @@ import argparse
 import os
 from typing import Dict, List, Tuple
 from tqdm import tqdm
+import sys
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 from src.utils.config import Config
 from src.utils.logging import setup_logging, get_logger

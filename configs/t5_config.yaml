@@ -6,7 +6,7 @@ data:
   cache_dir: "./cached_datasets"
 
 model:
-  name: "t5-base"
+  name: "t5-small"
   save_dir: "./t5_simplification"
   max_input_length: 512
   max_target_length: 128
