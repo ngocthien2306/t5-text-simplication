@@ -55,6 +55,37 @@ conda activate t5
 pip install -r requirements.txt
 ```
 
+
+## Downloading Pre-trained Models and Datasets
+
+### Pre-trained Model
+You can download our pre-trained model and datasets from Google Drive:
+
+1. **Checkpoint Model**: Download the fine-tuned model checkpoint from [Google Drive](https://drive.google.com/drive/folders/1e45NuCzrmH-DpVydOdb0msu8sSHZL4Ob)
+   - Download the `checkpoint-xxxx` folder
+   - Place it in the root directory of the project
+
+2. **Datasets**: In the same Google Drive link
+   - Download the `datasets` folder
+   - Place it in the root directory of the project
+
+Your directory structure should look like this after downloading:
+```bash
+text_simplification/
+├── checkpoint-26470/        # Downloaded model checkpoint
+│   ├── config.json
+│   ├── pytorch_model.bin
+│   └── ...
+├── datasets/               # Downloaded datasets
+│   ├── train.jsonl
+│   ├── valid.jsonl
+│   └── test.jsonl
+├── src/
+├── scripts/
+└── ...
+```
+
+
 ## Configuration
 
 The project uses two main configuration files:
