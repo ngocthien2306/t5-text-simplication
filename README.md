@@ -85,6 +85,14 @@ text_simplification/
 └── ...
 ```
 
+## Overall Performance
+
+| Metric | Score |
+|--------|-------|
+| BLEU | 0.3510 |
+| ROUGE-L | 0.5904 |
+| BERTScore | 0.8237 |
+
 
 ## Configuration
 

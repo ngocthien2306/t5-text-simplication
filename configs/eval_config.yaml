@@ -2,6 +2,9 @@ model:
   checkpoint_path: "/root/nguyen/research/NLP/Final/code/t5_simplification/checkpoint-26470"
   gpu_device: "7"
   name: "t5-small"
+  max_input_length: 512
+  max_target_length: 128
+
 
 data:
   test_cache: "./cached_datasets/test"
