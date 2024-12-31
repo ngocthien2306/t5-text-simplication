@@ -150,7 +150,7 @@ evaluation:
 To train the model:
 
 ```bash
-python train.py --config configs/t5_config.yaml
+python scripts/train.py --config configs/t5_config.yaml
 ```
 
 ### Evaluation
@@ -158,7 +158,7 @@ python train.py --config configs/t5_config.yaml
 To evaluate the model:
 
 ```bash
-python evaluate.py --config configs/eval_config.yaml --batch_size 16
+python scripts/evaluate.py --config configs/eval_config.yaml --batch_size 16
 ```
 
 ## Data Format
